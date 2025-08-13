@@ -9,7 +9,7 @@ def upload():
     if request.method == 'POST':
 
         file = request.files['photo']
-        file.save(file.filename)
+
 
         img = Image.open(file.filename)
         img = img.resize((150, 150))
